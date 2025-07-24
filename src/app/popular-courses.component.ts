@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Course } from './models/interfaces';
 import { CourseService } from './services/course.service';
+import { CourseCardComponent } from './course-card.component';
 
 @Component({
   selector: 'app-popular-courses',
+  standalone: true,
+  imports: [CommonModule, CourseCardComponent],
   template: `
     <section class="popular-courses">
       <div class="container">
@@ -15,8 +19,7 @@ import { CourseService } from './services/course.service';
         <div class="courses-grid" *ngIf="!loading">
           <app-course-card 
             *ngFor="let course of courses" 
-            [course]="course"
-            (courseSelected)="onCourseSelected($event)">
+            [course]="course">
           </app-course-card>
         </div>
         <div class="loading" *ngIf="loading">
@@ -48,10 +51,5 @@ export class PopularCoursesComponent implements OnInit {
         this.loading = false;
       }
     });
-  }
-
-  onCourseSelected(course: Course): void {
-    console.log('Course selected:', course);
-    // Navigation logic here
   }
 } 

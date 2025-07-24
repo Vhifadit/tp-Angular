@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FeatureCardComponent } from './feature-card.component';
 
 interface Feature {
   title: string;
@@ -8,6 +10,8 @@ interface Feature {
 
 @Component({
   selector: 'app-features',
+  standalone: true,
+  imports: [CommonModule, FeatureCardComponent],
   template: `
     <section class="features-section">
       <div class="container">
