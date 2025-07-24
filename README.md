@@ -1,5 +1,32 @@
 # GroupesAngular
 
+## Découpage du TP en 6 parties
+
+Ce projet peut être divisé en 6 parties distinctes, à attribuer à différents membres de l'équipe :
+
+1. **Initialisation du projet & Configuration**
+   - Création du projet Angular, configuration de base, structure des dossiers, installation des dépendances.
+2. **Composant Header & Navigation**
+   - Réalisation du header, du menu de navigation, et du responsive associé.
+3. **Section Hero & Fonctionnalités**
+   - Intégration de la section d'accueil (hero) et des fonctionnalités principales (features).
+4. **Section Cours Populaires**
+   - Développement de la section affichant les cours, gestion dynamique des données, affichage des cartes de cours.
+5. **Section Partenaires & Formation**
+   - Intégration de la section partenaires (logos) et de la section formation (texte + image).
+6. **Section Témoignages & Footer**
+   - Réalisation de la section témoignages (avis clients) et du footer du site.
+
+> **À attribuer :**
+> - Partie 1 :NOUDOGBESSI Akram
+> - Partie 2 :DAAGBOHOUNON vhifadit
+> - Partie 3 :DOSSA ferdinande
+> - Partie 4 :ALAOFE Hamizath
+> - Partie 5 :AKODO Aime
+> - Partie 6 :ALOFA johana
+
+---
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.3.
 
 ## Development server
