@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Testimonial } from './models/interfaces';
 import { TestimonialService } from './services/testimonial.service';
+import { TestimonialCardComponent } from './testimonial-card.component';
 
 @Component({
   selector: 'app-testimonials',
+  standalone: true,
+  imports: [CommonModule, TestimonialCardComponent],
   template: `
     <section class="testimonials-section">
       <div class="container">
